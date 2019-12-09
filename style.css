@@ -9,10 +9,16 @@ ul,li,ol{
 	float: left;
 }
 #a{
+	position: relative;
 	width: 984px;
 	float: left;
 	color: red;
 	font-size: 12px;
+}
+#scroll{
+	display: inline-block;
+	position: absolute;
+	right: 0;
 }
 .wapper{
 	width: 1400px;
