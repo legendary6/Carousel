@@ -4,8 +4,20 @@
 	var left = document.getElementById("left");
 	var right = document.getElementById("right");
 	var scroll = document.getElementById("scroll");
+	var l = document.getElementById("l");
 	var index = 1;
 	var isMoving = false;  //是否正在动
+
+
+	//滚动条幅,定速运动
+	setInterval(function(){
+		if(parseInt(getStyle(l, "left")) < -260){
+			l.style.left = 1000 + "px";
+		}
+		var now = parseInt(getStyle(l, "left"));
+		l.style.left = now - 1 + "px";
+	}, 20);
+
 
 
 	//播放函数

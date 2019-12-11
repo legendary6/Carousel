@@ -5,20 +5,23 @@
 ul,li,ol{
     list-style: none;
 }
-.left{
-	float: left;
-}
-#a{
-	position: relative;
-	width: 984px;
+#scroll{
 	float: left;
 	color: red;
 	font-size: 12px;
+	position: relative;
+	overflow: hidden;
+	height: 19px;
+	width: 984px;
 }
-#scroll{
-	display: inline-block;
+.left{
+	float: left;
+}
+#l{
+	left: 1000px;
+}
+#scroll span{
 	position: absolute;
-	right: 0;
 }
 .wapper{
 	width: 1400px;
